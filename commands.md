@@ -1,80 +1,72 @@
-Git Commands
-1. Initialization
-Create a new Git repository:
+# Git Commands Guide
 
-git init
+## 1. Initialization
+- **Initialize a Git Repository:** This command creates a new Git repository in the current directory.
+  - Command: `git init`
 
-2. Configuration
-Set global username:
+## 2. Configuration
+- **Set Global Username:** This command sets your global username for Git commits.
+  - Command: `git config --global user.name "divya"`
+- **Set Global User Email:** This command sets your global email address for Git commits.
+  - Command: `git config --global user.email "divyakaladharannair@gmail.com"`
 
-git config --global user.name "LondheShubham153"
+## 3. Repository Status
+- **Check the Status of the Repository:** This command shows the state of the working directory and staging area.
+  - Command: `git status`
 
-Set global email:
+## 4. File Operations
+- **Add Files to Staging Area:** This command adds a specific file or all files to the staging area for the next commit.
+  - Command: `git add <filename>`
+  - Command: `git add .`  # Add all files
 
-git config --global user.email "shubhamnath5@gmail.com"
+- **Remove a File from Staging Area:** This command removes a specific file from the staging area.
+  - Command: `git rm --cached <filename>`
 
-3. File Operations
-Create a new file:
+- **Restore a Deleted or Modified File:** This command restores a deleted or modified file to its last committed state.
+  - Command: `git restore <filename>`
+  - Command: `git restore --staged <filename>`  # From staging area
 
-touch <filename>
+- **Delete a File from Repository:** This command deletes a file both locally and from the Git repository.
+  - Command: `rm <filename>`  # Delete locally
+  - Command: `git rm <filename>`  # Delete and track in Git
+  - Command: `git commit -m "Deleted <filename>"`
 
-Remove a file:
+## 5. Committing Changes
+- **Commit Changes:** This command records the changes in the staging area to the repository.
+  - Command: `git commit -m "Commit message"`
 
-rm <filename>
+## 6. Branch Management
+- **Create a New Branch:** This command creates a new branch and switches to it.
+  - Command: `git checkout -b <branch-name>`
 
-Restore a deleted file:
+- **Switch Between Branches:** This command switches to the specified branch.
+  - Command: `git checkout <branch-name>`
 
-git restore <filename>
+- **List All Branches:** This command lists all branches in the repository.
+  - Command: `git branch`
 
-4. Staging and Commit
-Check the status of the repository:
+## 7. Viewing History
+- **View Commit History:** This command displays the commit history for the repository.
+  - Command: `git log`
+  - Command: `git log --oneline`  # Condensed view
 
-git status
+## 8. Merging Changes
+- **Merge Changes from Another Branch:** This command merges changes from a specified branch into the current branch.
+  - Command: `git merge <branch-name>`
 
-Add a file to the staging area:
+## 9. Remote Operations
+- **Push Changes to Remote Repository:** This command pushes the committed changes to the specified remote branch.
+  - Command: `git push origin <branch-name>`
 
-git add <filename>
+- **Pull Changes from Remote Repository:** This command fetches and merges changes from the specified remote branch.
+  - Command: `git pull origin <branch-name>`
 
-Commit changes with a message:
+- **Add Remote Repository:** This command adds a new remote repository with the specified URL.
+  - Command: `git remote add origin <repository-url>`
 
-git commit -m "your commit message"
+- **View Remote Repositories:** This command lists all remote repositories configured for the local repository.
+  - Command: `git remote -v`
 
-5. Branching
-Create a new branch:
-
-git checkout -b <branch_name>
-
-Switch between branches:
-
-git checkout <branch_name>
-
-List all branches:
-
-git branch
-
-6. Logs
-View commit history:
-
-git log
-
-View concise commit history:
-
-git log --oneline
-
-7. Remove from Staging
-Unstage a file (remove from index but keep in working directory):
-
-git rm --cached <filename>
-
-8. Miscellaneous
-View all files, including hidden ones:
-
-ls -a
-
-Clear terminal screen:
-
-clear
-
-View command history:
-
-history
+## 10. Command History
+- **Check Command History:** This command shows the history of commands executed in the terminal.
+  - Command: `history`
