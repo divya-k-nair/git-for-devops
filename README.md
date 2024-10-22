@@ -6,3 +6,5 @@ Includes:
 -commands
 
 -tutorials
+
+-videos
