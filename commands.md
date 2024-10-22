@@ -70,3 +70,98 @@
 ## 10. Command History
 - **Check Command History:** This command shows the history of commands executed in the terminal.
   - Command: `history`
+    
+## 11.  Clone Repositories
+
+- **Clone a remote repository to local system**  
+  `git clone https://github.com/divya-k-nair/git-for-devops.git`
+
+## 12. Checking Repository Status
+- **Check the status of your working directory and staging area**  
+  `git status`
+
+- **List all files, including hidden ones**  
+  `ls -a`
+
+- **View remote repositories**  
+  `git remote -v`
+
+## 13. Adding and Committing Changes
+- **Add files to the staging area**  
+  `git add <filename>`  
+  `git add .`
+
+- **Commit changes with a message**  
+  `git commit -m "Commit message"`
+
+## 14. Managing Remote Repositories
+- **View remote URLs**  
+  `git remote -v`
+
+- **Change the remote repository URL**  
+  `git remote set-url origin <new-repository-url>`
+
+## 15. Pushing and Pulling Changes
+- **Push changes to a remote branch**  
+  `git push origin <branch-name>`
+
+- **Pull changes from a remote branch**  
+  `git pull origin <branch-name>`
+
+## 16. Branch Management
+- **Create a new branch and switch to it**  
+  `git checkout -b <branch-name>`
+
+- **Switch between branches**  
+  `git checkout <branch-name>`
+
+- **List all branches**  
+  `git branch`
+
+## 17. Merging Branches
+- **Merge changes from another branch**  
+  `git merge <branch-name>`
+
+- **View a concise commit history**  
+  `git log --oneline`
+
+## 18. Editing Files and Tracking Changes
+- **Open and edit files using vim**  
+  `vim <filename>`
+
+- **Track and commit file changes**  
+  `git add <filename>`  
+  `git commit -m "Updated <filename>"`
+
+## 19. Working with SSH
+- **Change the remote URL to SSH**  
+  `git remote set-url origin git@github.com:divya-k-nair/git-for-devops.git`
+
+## 20. Command History
+- **View the list of previously executed commands**  
+  `history`
+
+## 21. Example Workflow
+1. **Clone repository and navigate to it**  
+   `git clone https://github.com/divya-k-nair/git-for-devops.git`  
+   `cd git-for-devops`
+
+2. **Add a README file and push changes**  
+   `vim README.md`  
+   `git add README.md`  
+   `git commit -m "README.md added"`  
+   `git push origin main`
+
+3. **Create and merge branches**  
+   `git checkout -b staging`  
+   `git checkout -b dev`  
+   `git add branching.md`  
+   `git commit -m "added branching.md"`  
+   `git checkout staging`  
+   `git merge dev`  
+   `git push origin staging`
+
+4. **Track additional changes and push updates**  
+   `git add newfile.md`  
+   `git commit -m "5 branches list
+
